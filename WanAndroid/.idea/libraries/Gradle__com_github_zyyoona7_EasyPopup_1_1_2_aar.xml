@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zyyoona7:EasyPopup:1.1.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b70c64983d7dc46434522482d44fc0fe/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b70c64983d7dc46434522482d44fc0fe/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b70c64983d7dc46434522482d44fc0fe/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b70c64983d7dc46434522482d44fc0fe/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

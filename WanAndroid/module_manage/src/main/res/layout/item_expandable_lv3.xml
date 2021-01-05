@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="1dp"
+    android:id="@+id/ll_layout"
+    android:background="#4026c4fd"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginStart="0dp"
+ >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:src="@mipmap/ico4" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:text="标题"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:background="@drawable/textview_border_green"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="正常"
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:background="@drawable/textview_border_green"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:text="检测完成"
+        android:id="@+id/tv_checkover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/green"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></TextView>
+
+
+
+    <ImageView
+         android:id="@+id/iv"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+include ':dvlibrary'
+include ':module_manage'
+include ':app', ':common_base', ':module_usercenter', ':module_main', ':module_gank', ':module_quality', ':module_ticket'

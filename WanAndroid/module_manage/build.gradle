@@ -1,0 +1,67 @@
+if (isRunAlone.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+apply plugin: 'org.greenrobot.greendao' // apply plugin
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            if (isRunAlone.toBoolean()) {
+                manifest.srcFile 'src/main/debug/AndroidManifest.xml'
+            } else {
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+                java {
+                    // 全部 module 一起编译时剔除 debug 目录
+                    exclude '**/debug/**'
+                }
+            }
+        }
+    }
+
+
+
+}
+greendao {
+    schemaVersion 1   // 数据库版本号
+    daoPackage 'com.xing.manage.db'  // 设置DaoMaster、DaoSession、Dao 包名
+    targetGenDir 'src/main/java'    //设置DaoMaster、DaoSession、Dao目录
+    generateTests false      //设置为true以自动生成单元测试。
+    targetGenDirTests 'src/main/java' //应存储生成的单元测试的基本目录。默认为 src / androidTest / java。
+}
+dependencies {
+     implementation project(path: ':common_base')
+    project(':common_base')
+
+
+
+    implementation project(path: ':dvlibrary')
+    implementation 'com.github.zyyoona7:EasyPopup:1.1.2'
+
+    // arouter-compiler
+    annotationProcessor rootProject.ext.dependencies['arouter-compiler']
+    annotationProcessor rootProject.ext.dependencies['glide-compiler']
+}

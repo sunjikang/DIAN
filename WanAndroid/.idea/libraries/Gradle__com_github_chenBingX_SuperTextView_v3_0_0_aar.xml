@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.chenBingX:SuperTextView:v3.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e37fe6f48848b30d869a66dc71d854a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e37fe6f48848b30d869a66dc71d854a/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4e37fe6f48848b30d869a66dc71d854a/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.chenBingX/SuperTextView/v3.0.0/15f058fda675306a6ec88b0180d607a9d07e0c5a/SuperTextView-v3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_f5"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/et_setting_host"
+            style="@style/RegisterEditTextStyle"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/please_input_host_hint"
+            android:text="http://101.200.140.188:8901/" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ea" />
+
+        <EditText
+            android:id="@+id/et_setting_only"
+            style="@style/RegisterEditTextStyle"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="10dp"
+            android:hint="@string/please_input_only"
+            android:text="7536d561a8a85dea" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray_ea" />
+
+
+        <Button
+            android:id="@+id/btn_save"
+            style="@style/PrimaryButtonStyle"
+            android:text="@string/saveAndEdit" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

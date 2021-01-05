@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     package="com.xing.manage">
+
+    <application
+
+        >
+        <activity android:name=".activity.ManageActivity">
+        </activity>
+        <activity android:name=".activity.HistoryActivity">
+
+    </activity>
+        <activity android:name=".activity.device.DeviceActivity">
+        </activity>
+        <activity android:name=".activity.ShowPhotoActivity"></activity>
+        <activity android:name=".activity.device.DeviceAreaActivity"></activity>
+        <activity android:name=".activity.device.DeviceFacilityActivity"></activity>
+        <activity android:name=".activity.device.DeviceInspectionActivity"></activity>
+        <activity android:name=".activity.device.DeviceDetailActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">质检</string>
+
+    <string name="scan_title">质检扫描</string>
+    <string name="scan_btn_finished">成品</string>
+    <string name="scan_btn_semi_finished">零部件</string>
+    <string name="scan_btn_scan">调用摄像头扫描</string>
+
+    <string name="quality_title">质检跟单</string>
+    <string name="quality_quality_list">质检纪录</string>
+    <string name="quality_plan_list">月计划</string>
+    <string name="quality_test">模拟扫描结果</string>
+    <string name="quality_check_num">检验数量</string>
+    <string name="quality_bad_num">残缺数量</string>
+    <string name="quality_order_num">订单数量</string>
+    <string name="quality_follow">跟单</string>
+    <string name="quality_scan">【请扫描跟单编码】</string>
+    <string name="quality_finished">成品</string>
+    <string name="quality_semi_finished">零部件</string>
+    <string name="quality_bad">不良</string>
+    <string name="quality_good">合格</string>
+    <string name="quality_job">报工</string>
+    <string name="quality_camera">拍照</string>
+    <string name="quality_upload">上传文件</string>
+    <string name="quality_add_code">添加不良原因</string>
+    <string name="quality_upload_hint">支持扩展名：.jpg</string>、
+    <string name="quality_bad_cause">不良原因</string>
+    <string name="quality_bad_sumbit">提交</string>
+
+    <string name="main_title">质检系统</string>
+    <string name="main_module1">基础配置</string>
+    <string name="main_module2">点击计划</string>
+    <string name="main_module3">数据上传</string>
+    <string name="main_module4">成品终检</string>
+
+    <string name="plan_title">计划列表</string>
+    <string name="plan_title_update">更新数据</string>
+
+    <string name="quality_list_title">质检列表</string>
+
+    <string name="item_quality_name">产品名称:</string>
+    <string name="item_quality_code">跟单号:</string>
+    <string name="item_quality_state">质检结果:</string>
+    <string name="item_quality_types">不良数量:</string>
+    <string name="item_quality_images">拍照数量:</string>
+    <string name="item_quality_upload">上传状态:</string>
+
+
+    <string name="item_plan_time">生产月:</string>
+    <string name="item_plan_num">数量:</string>
+
+
+</resources>

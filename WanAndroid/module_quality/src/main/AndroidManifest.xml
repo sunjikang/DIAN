@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xing.module.quality">
+
+    <application>
+        <activity
+            android:name=".activity.QualityActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.PlanActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".activity.QualityListActivity"
+            android:exported="false"></activity>
+
+        <service android:name=".service.DownloadService"></service>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.xing.module.quality.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

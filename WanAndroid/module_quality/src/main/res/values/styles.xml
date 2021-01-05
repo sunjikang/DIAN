@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="PrimaryButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/selector_btn_bg</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+    <!--  列表中上弹的弹出框 动画-->
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/recorder_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/recorder_dialog_out_anim</item>
+    </style>
+
+</resources>

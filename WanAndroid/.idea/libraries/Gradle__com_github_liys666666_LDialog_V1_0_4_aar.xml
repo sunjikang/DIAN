@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.liys666666:LDialog:V1.0.4@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f847ab83df036fcffd6d9db408498726/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f847ab83df036fcffd6d9db408498726/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f847ab83df036fcffd6d9db408498726/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.liys666666/LDialog/V1.0.4/155286f5a558922d2352d7c258b460b3324ed7af/LDialog-V1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

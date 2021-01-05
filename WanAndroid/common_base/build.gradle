@@ -1,0 +1,71 @@
+apply plugin: 'com.android.library'
+
+android {
+    // rootProject.ext.android['compileSdkVersion']
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+                includeCompileClasspath = true
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    api 'com.github.chenBingX:SuperTextView:v3.0.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.ext.dependencies['appcompat-v7']
+    api rootProject.ext.dependencies['design']
+    api rootProject.ext.dependencies['support-v4']
+    api rootProject.ext.dependencies['cardview-v7']
+    api rootProject.ext.dependencies['annotations']
+    api rootProject.ext.dependencies['recyclerview-v7']
+    api rootProject.ext.dependencies['gson']
+    api rootProject.ext.dependencies['constraint-layout']
+    api "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    api rootProject.ext.dependencies['rxandroid']
+    api rootProject.ext.dependencies['rxjava']
+    api rootProject.ext.dependencies['converter-gson']
+    api rootProject.ext.dependencies['adapter-rxjava']
+    api rootProject.ext.dependencies['okhttp']
+    api rootProject.ext.dependencies['logging-interceptor']
+    api rootProject.ext.dependencies['fastjson']
+    api rootProject.ext.dependencies['recycler-adapter-helper']
+    api rootProject.ext.dependencies['glide']
+    implementation 'com.github.liys666666:LDialog:V1.0.4'
+    annotationProcessor rootProject.ext.dependencies['glide-compiler']
+
+    // butterknife
+    api rootProject.ext.dependencies['butterknife']
+    annotationProcessor rootProject.ext.dependencies['butterknife-compiler']
+    // arouter
+    api rootProject.ext.dependencies['arouter-api']
+    implementation rootProject.ext.dependencies['arouter-compiler']
+    api rootProject.ext.dependencies['banner']
+    api rootProject.ext.dependencies['greendao']
+    api rootProject.ext.dependencies['retrofit-cookie']
+    api rootProject.ext.dependencies['smart-refreshlayout']
+    api rootProject.ext.dependencies['photoview']
+    api rootProject.ext.dependencies['andpermission']
+    api rootProject.ext.dependencies['eventbus']
+    api rootProject.ext.dependencies['aspectj']
+    api rootProject.ext.dependencies['material-dialogs']
+
+    def versions = "2.2.0"
+}

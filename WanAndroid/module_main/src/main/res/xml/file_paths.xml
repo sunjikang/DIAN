@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--外部存储路径-->
+    <external-path
+        name="files_root"
+        path="Android/data/com.nongyan.xinzhihouse/" />
+    <!--内部存储路径-->
+    <files-pathcom.xing.wanandroid.fileprovider
+        name="Android/data/com.nongyan.xinzhihouse/"
+        path="files_root"></files-pathcom.xing.wanandroid.fileprovider>
+    <external-path
+        name="external_path"
+        path="." />
+    <external-path
+        name="images"
+        path="test/"/>
+    <external-path
+        name="download"
+        path="Download/"/>
+</paths>

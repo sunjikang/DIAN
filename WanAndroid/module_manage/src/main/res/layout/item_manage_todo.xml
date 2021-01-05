@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_handle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_333"
+                android:textSize="18sp"
+                tools:text="审批" />
+
+            <TextView
+                android:id="@+id/tv_handle_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/textview_border_green"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="11sp"
+                tools:text="普通" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_handle_pname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/black_999"
+                android:textSize="14sp"
+                tools:text="任务：电气一种工作票" />
+
+            <TextView
+                android:id="@+id/tv_handle_applyer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:textColor="@color/black_999"
+                android:textSize="14sp"
+                tools:text="发起人：管理员" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_handle_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black_999"
+            android:textSize="14sp"
+            tools:text="委托人：曹健" />
+
+
+        <TextView
+            android:id="@+id/tv_handle_createtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black_999"
+            android:textSize="14sp"
+            tools:text="创建时间：2020-09-16 18:10:10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_change_model"
+                style="@style/button_blue_style"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:text="详情"></Button>
+
+            <Button
+                android:id="@+id/btn_pass"
+                style="@style/button_green_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="通过"
+                android:textColor="@color/colorPrimary"></Button>
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/button_orange_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="驳回"></Button>
+
+            <Button
+                android:id="@+id/btn_edit_history"
+                style="@style/button_white_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="委托"></Button>
+
+            <Button
+                android:id="@+id/btn_delete"
+                style="@style/button_blue_light_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:text="历史"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

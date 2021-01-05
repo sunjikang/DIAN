@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+    android:minHeight="1000dp"
+    >
+
+
+    <android.support.constraint.ConstraintLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:background="@drawable/shape_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+            app:title="检查项详情"
+            app:titleTextColor="@color/white"></android.support.v7.widget.Toolbar>
+
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/guideline11"
+             app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_title">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.coorchice.library.SuperTextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="设备名称"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+
+                />
+                <com.coorchice.library.SuperTextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="巡检类型"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                  />
+                <com.coorchice.library.SuperTextView
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="检测倒计时"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_have_value"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/cardview"
+            app:layout_constraintStart_toStartOf="@+id/cardview"
+            app:layout_constraintTop_toBottomOf="@+id/cardview"
+            >
+            <LinearLayout
+                android:id="@+id/rg_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+  >
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="0dp"
+                        android:textSize="20dp"
+                        android:checked="true"
+                         android:id="@+id/state_nomal"
+                        android:text="正常"/>
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:textSize="20dp"
+                        android:id="@+id/state_exception"
+                        android:text="异常"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/cl_have_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/tie_check_value"
+                        android:layout_width="100dp"
+                        android:hint="检测值"
+                        android:inputType="numberDecimal"
+                         android:layout_height="wrap_content"
+                         android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="24sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline13"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                    app:layout_constraintStart_toStartOf="@+id/guideline14"
+                    app:layout_constraintTop_toTopOf="@+id/guideline8">
+
+                    <com.coorchice.library.SuperTextView
+                        android:id="@+id/supertv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="上上限"
+                        android:textColor="@color/white"
+                        app:stv_corner="5dp"
+                        app:stv_solid="@color/red" />
+
+                    <com.coorchice.library.SuperTextView
+                        android:id="@+id/supertv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="上限"
+                        android:textColor="@color/white"
+                        app:stv_corner="5dp"
+                        app:stv_solid="@color/orange" />
+
+                    <com.coorchice.library.SuperTextView
+                        android:id="@+id/supertv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="下限"
+                        android:textColor="@color/white"
+                        app:stv_corner="5dp"
+                        app:stv_solid="@color/orange" />
+
+                    <com.coorchice.library.SuperTextView
+                        android:id="@+id/supertv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:text="下下限"
+                        android:textColor="@color/white"
+                        app:stv_corner="5dp"
+                        app:stv_solid="@color/red" />
+                </LinearLayout>
+
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.5" />
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/guideline15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.2" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_no_value"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardview"
+            app:layout_constraintStart_toStartOf="@+id/cardview"
+            app:layout_constraintTop_toBottomOf="@+id/layout_have_value">
+            >
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/TextInputEditText"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="24sp"
+                    android:hint="备注" />
+            </android.support.design.widget.TextInputLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/layout_select_photo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/layout_no_value"
+            app:layout_constraintStart_toStartOf="@+id/cardview"
+            app:layout_constraintEnd_toEndOf="@+id/cardview"
+            >
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/btn_bg_blue"
+
+                android:text="图片选择"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/btn_bg_green"
+                android:text="保存"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/button3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button3"
+                app:layout_constraintVertical_bias="1.0" />
+
+             </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_send_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_select_photo">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

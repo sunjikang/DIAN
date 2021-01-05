@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/WanAndroid.iml" filepath="$PROJECT_DIR$/.idea/WanAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/WanAndroid.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/WanAndroid.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common_base/WanAndroid.common_base.iml" filepath="$PROJECT_DIR$/.idea/modules/common_base/WanAndroid.common_base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/dvlibrary/WanAndroid.dvlibrary.iml" filepath="$PROJECT_DIR$/.idea/modules/dvlibrary/WanAndroid.dvlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_gank/WanAndroid.module_gank.iml" filepath="$PROJECT_DIR$/.idea/modules/module_gank/WanAndroid.module_gank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_main/WanAndroid.module_main.iml" filepath="$PROJECT_DIR$/.idea/modules/module_main/WanAndroid.module_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_manage/WanAndroid.module_manage.iml" filepath="$PROJECT_DIR$/.idea/modules/module_manage/WanAndroid.module_manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_quality/WanAndroid.module_quality.iml" filepath="$PROJECT_DIR$/.idea/modules/module_quality/WanAndroid.module_quality.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_ticket/WanAndroid.module_ticket.iml" filepath="$PROJECT_DIR$/.idea/modules/module_ticket/WanAndroid.module_ticket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/module_usercenter/WanAndroid.module_usercenter.iml" filepath="$PROJECT_DIR$/.idea/modules/module_usercenter/WanAndroid.module_usercenter.iml" />
+    </modules>
+  </component>
+</project>

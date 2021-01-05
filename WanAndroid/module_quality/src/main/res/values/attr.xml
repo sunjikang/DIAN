@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textSize" format="dimension" />
+    <attr name="textColor" format="color" />
+
+    <declare-styleable name="StackLabel">
+        <attr name="textColor" />
+        <attr name="textSize" />
+        <attr name="paddingVertical" format="dimension" />
+        <attr name="paddingHorizontal" format="dimension" />
+        <attr name="itemMargin" format="dimension" />
+        <attr name="itemMarginVertical" format="dimension" />
+        <attr name="itemMarginHorizontal" format="dimension" />
+        <attr name="deleteButton" format="boolean" />
+        <attr name="deleteButtonImage" format="reference" />
+        <attr name="labelBackground" format="reference" />
+        <attr name="selectMode" format="boolean" />
+        <attr name="selectBackground" format="reference" />
+        <attr name="selectTextColor" format="color" />
+        <attr name="maxSelectNum" format="integer" />
+        <attr name="minSelectNum" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="NumberButton">
+        <attr name="textSize" />
+        <attr name="textColor" />
+        <attr name="editable" format="boolean" />
+        <attr name="buttonWidth" format="dimension" />
+        <attr name="textWidth" format="dimension" />
+    </declare-styleable>
+
+</resources>

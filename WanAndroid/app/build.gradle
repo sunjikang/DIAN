@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.xing.wanandroid"
+        multiDexEnabled true
+        compileSdkVersion rootProject.ext.android.compileSdkVersion
+        buildToolsVersion rootProject.ext.android.buildToolsVersion
+        defaultConfig {
+            minSdkVersion rootProject.ext.android.minSdkVersion
+            targetSdkVersion rootProject.ext.android.targetSdkVersion
+            versionCode rootProject.ext.android.versionCode
+            versionName rootProject.ext.android.versionName
+            multiDexEnabled true
+
+
+            renderscriptTargetApi 19
+            renderscriptSupportModeEnabled true
+
+            javaCompileOptions {
+                annotationProcessorOptions {
+                    arguments = [AROUTER_MODULE_NAME: project.getName()]
+                }
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                outputFileName = "hzcs_${rootProject.ext.android.versionCode}_${rootProject.ext.android.versionName}_${new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))}.apk"
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':common_base')
+    if (!isRunAlone.toBoolean()) {
+        implementation project(':module_usercenter')
+        implementation project(':module_main')
+//        implementation project(':module_gank')
+//        implementation project(':module_quality')
+        implementation project(':module_ticket')
+        implementation project(':module_manage')
+    }
+    // 如果 app 主工程中使用了 Arouter 注解，那就需要这个 annotationProcessor
+    annotationProcessor rootProject.ext.dependencies['arouter-compiler']
+}

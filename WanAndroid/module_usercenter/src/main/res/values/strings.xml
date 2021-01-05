@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">module_usercenter</string>
+    <string name="please_input_url">请输入服务器地址</string>
+    <string name="please_input_username">请输入用户名</string>
+    <string name="please_input_password">请输入密码</string>
+    <string name="please_input_host">请输入访问地址</string>
+    <string name="please_input_host_hint">请输入访问地址如：http://10.2.8.154:8888/</string>
+    <string name="please_input_only">请输入唯一码</string>
+    <string name="please_input_code">请输入验证码</string>
+    <string name="goto_register">注册账号</string>
+    <string name="goto_setting_ip">访问设置</string>
+    <string name="login">登录</string>
+    <string name="user_register">用户注册</string>
+    <string name="register">注册</string>
+    <string name="setting">设置</string>
+    <string name="saveAndEdit">保存并退出</string>
+</resources>

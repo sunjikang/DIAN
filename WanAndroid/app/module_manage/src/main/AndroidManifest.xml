@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xing.manage">
+
+    <application>
+        <activity
+            android:name="com.xing.manage.activity.ManageActivity"
+            android:launchMode="singleTask"
+            android:exported="false"/>
+
+
+    </application>
+
+</manifest>

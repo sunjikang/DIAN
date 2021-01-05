@@ -1,0 +1,36 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+
+ext {
+    retrofitVersion = '2.4.0'
+}
+buildscript {
+
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.google.com' }
+        mavenCentral() // add repository
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        //避免butterKnife在library中使用出现id冲突
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2' // add plugin
+        classpath 'org.aspectj:aspectjtools:1.8.9'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
